@@ -1,6 +1,6 @@
 <?php
 
-namespace Ridrog\LogViewer;
+namespace Ridrog\AdminLteLogviewer;
 
 use Illuminate\Support\ServiceProvider;
 
