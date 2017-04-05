@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ridrog\\LogViewer\\": "src/"
+            "Ridrog\\AdminLteLogviewer\\": "src/"
         }
     }
 }
