@@ -1,4 +1,4 @@
-@extends('adminlte::layout.adminlte')
+@extends('adminlte::default')
 
 @section('content-header')
     <h1 class="page-header">Logs</h1>
