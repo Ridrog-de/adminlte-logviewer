@@ -4,12 +4,41 @@
     "type": "laravel",
     "license": "MIT",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "arcanedev/log-viewer": "^4.3"
+        "php": ">=7.0",
+        "arcanedev/log-viewer": "^4.4",
+        "laravel/framework": "^5.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5.0",
+        "phpunit/phpunit" : "~6.0"
     },
     "autoload": {
         "psr-4": {
             "Ridrog\\AdminLteLogviewer\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ridrog\\AdminLteLogviewer\\Test\\": "tests"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Ridrog\\AdminLteLogviewer\\LogviewerServiceProvider"
+            ],
+            "aliases" : {
+
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "testbench": "composer require --dev \"orchestra/testbench-browser-kit=~3.5\" \"orchestra/database=~3.5\""
+    },
+    "config": {
+        "sort-packages": true
     }
 }
