@@ -6,13 +6,11 @@ This package provides a arcanedev/logviewer integration for ridrog/adminlte
 
 1. Composer require  
     ``` composer require arcanedev/log-viewer ```
-2. Include the ServiceProvider  
-    ```  Arcanedev\LogViewer\LogViewerServiceProvider::class, ```
-3. Publish Config  
+2. Publish Config  
     ```  php artisan log-viewer:publish --tag=config ```    
-4. Set log to daily
+3. Set log to daily
 
-do not puplish the views  
+do not puplish the views   !!
 
 more info @ [ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer)
 ## Install ridrog/logviewer
